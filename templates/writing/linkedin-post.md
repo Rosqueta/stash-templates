@@ -1,6 +1,5 @@
 ---
 title: LinkedIn post from a key idea
-tags: [linkedin, social-media, writing]
 variables: [key_idea, tone]
 ---
 Write a LinkedIn post based on the following idea: {{key_idea}}.

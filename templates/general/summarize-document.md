@@ -1,6 +1,5 @@
 ---
 title: Summarize a document
-tags: [summarization, reading, productivity]
 variables: [document_content, audience]
 ---
 Summarize the following document clearly and concisely for {{audience}}.

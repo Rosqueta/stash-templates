@@ -1,6 +1,5 @@
 ---
 title: Brainstorm component names
-tags: [design, components, naming]
 variables: [component_purpose, existing_names]
 ---
 Help me brainstorm clear and consistent names for a UI component.

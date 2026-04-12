@@ -1,6 +1,5 @@
 ---
 title: Write unit tests
-tags: [testing, development, quality]
 variables: [function_or_module, language, test_framework]
 ---
 Write comprehensive unit tests for the following {{language}} code using {{test_framework}}.

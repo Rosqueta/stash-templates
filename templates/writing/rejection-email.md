@@ -1,6 +1,5 @@
 ---
 title: Polite rejection email
-tags: [email, communication, professional]
 variables: [contact_name, company, reason]
 ---
 Write a professional and empathetic rejection email addressed to {{contact_name}} from {{company}}.

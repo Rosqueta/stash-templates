@@ -1,6 +1,5 @@
 ---
 title: Meeting minutes from transcript
-tags: [meetings, notes, productivity]
 variables: [transcript, meeting_topic]
 ---
 Write clear and structured meeting minutes based on the following transcript.

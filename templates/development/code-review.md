@@ -1,6 +1,5 @@
 ---
 title: Code review
-tags: [code-review, quality, development]
 variables: [code, language]
 ---
 Review the following {{language}} code as a senior engineer. Be direct and specific.

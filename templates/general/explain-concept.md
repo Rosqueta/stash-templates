@@ -1,6 +1,5 @@
 ---
 title: Explain a concept
-tags: [learning, explanation, education]
 variables: [concept, background_level]
 ---
 Explain {{concept}} in a clear and accessible way for someone with {{background_level}} knowledge.

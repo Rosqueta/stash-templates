@@ -1,6 +1,5 @@
 ---
 title: Prepare a meeting agenda
-tags: [meetings, planning, productivity]
 variables: [meeting_goal, attendees, available_time]
 ---
 Prepare a structured agenda for a meeting with the following details:

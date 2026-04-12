@@ -1,6 +1,5 @@
 ---
 title: Compare options and recommend
-tags: [analysis, decision-making, comparison]
 variables: [options, decision_criteria]
 ---
 Compare the following options and give a clear recommendation.

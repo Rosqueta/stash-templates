@@ -1,6 +1,5 @@
 ---
 title: Analyze data metrics
-tags: [analysis, data, metrics]
 variables: [metric_data, business_context]
 ---
 Analyze the following metrics and provide actionable insights.

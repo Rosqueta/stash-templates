@@ -1,6 +1,5 @@
 ---
 title: UI design feedback review
-tags: [design, feedback, ux]
 variables: [screen_or_feature, design_goal]
 ---
 Review the following UI design and provide structured feedback.
