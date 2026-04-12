@@ -1,6 +1,6 @@
 # stash-templates
 
-Curated prompt templates for [Stash](https://github.com/verogasco/stash) — a minimalist macOS prompt manager.
+Curated prompt templates for [Stash](https://github.com/Rosqueta/stash) — a minimalist macOS prompt manager.
 
 ## How to add a template
 
