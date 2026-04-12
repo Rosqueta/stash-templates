@@ -1,0 +1,31 @@
+ name: Build templates.json                                                                                                      
+                                                                                                                                  
+  on:                                                                                                                             
+    push:                                                                                                                         
+      branches: [main]                                                                                                            
+      paths:
+        - "templates/**"
+    workflow_dispatch:                                                                                                            
+                  
+  jobs:                                                                                                                           
+    build:                                                                                                                      
+      runs-on: ubuntu-latest
+      permissions:
+        contents: write
+      steps:
+        - uses: actions/checkout@v4
+                                                                                                                                  
+        - uses: actions/setup-node@v4
+          with:                                                                                                                   
+            node-version: 20                                                                                                    
+
+        - name: Generate templates.json
+          run: node scripts/build.js
+                                                                                                                                  
+        - name: Commit updated templates.json
+          run: |                                                                                                                  
+            git config user.name "github-actions[bot]"                                                                          
+            git config user.email "github-actions[bot]@users.noreply.github.com"                                                  
+            git add dist/templates.json
+            git diff --cached --quiet || git commit -m "chore: regenerate templates.json [skip ci]"                               
+            git push                                           
