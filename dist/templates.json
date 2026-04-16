@@ -1,73 +1,104 @@
 {
-  "version": 1,
-  "updatedAt": 1776021274,
+  "version": 2,
+  "updatedAt": 1776343527,
   "categories": [
     {
       "slug": "general",
-      "label": "General"
+      "label_es": "General",
+      "label_en": "General"
     },
     {
       "slug": "writing",
-      "label": "Writing"
+      "label_es": "Redacción",
+      "label_en": "Writing"
     },
     {
       "slug": "design",
-      "label": "Design"
+      "label_es": "Diseño",
+      "label_en": "Design"
     },
     {
       "slug": "development",
-      "label": "Development"
+      "label_es": "Desarrollo",
+      "label_en": "Development"
     },
     {
       "slug": "analysis",
-      "label": "Analysis"
+      "label_es": "Análisis",
+      "label_en": "Analysis"
     },
     {
       "slug": "meetings",
-      "label": "Meetings"
+      "label_es": "Reuniones",
+      "label_en": "Meetings"
     }
   ],
   "templates": [
     {
       "id": "tpl-explain-concept",
-      "title": "Explain a concept",
+      "title_es": "Explicar un concepto",
+      "title_en": "Explain a concept",
       "category": "general",
       "tags": [],
-      "content": "Explain {{concept}} in a clear and accessible way for someone with {{background_level}} knowledge.\n\nUse concrete examples and analogies where helpful. Avoid unnecessary jargon. End with a brief summary of the key idea.",
-      "variables": [
+      "content_es": "Explica {{concepto}} de forma clara y accesible para alguien con conocimientos de nivel {{nivel_de_conocimiento}}.\n\nUsa ejemplos concretos y analogías donde sea útil. Evita el lenguaje técnico innecesario. Termina con un breve resumen de la idea principal.",
+      "content_en": "Explain {{concept}} in a clear and accessible way for someone with {{background_level}} knowledge.\n\nUse concrete examples and analogies where helpful. Avoid unnecessary jargon. End with a brief summary of the key idea.",
+      "variables_es": [
+        "concepto",
+        "nivel_de_conocimiento"
+      ],
+      "variables_en": [
         "concept",
         "background_level"
       ]
     },
     {
       "id": "tpl-summarize-document",
-      "title": "Summarize a document",
+      "title_es": "Resumir un documento",
+      "title_en": "Summarize a document",
       "category": "general",
       "tags": [],
-      "content": "Summarize the following document clearly and concisely for {{audience}}.\n\nFocus on the key ideas, main arguments, and any important conclusions. Omit unnecessary details while preserving the essential meaning.\n\nDocument:\n{{document_content}}",
-      "variables": [
+      "content_es": "Resume el siguiente documento de forma clara y concisa para {{audiencia}}.\n\nCéntrate en las ideas principales, los argumentos clave y las conclusiones importantes. Omite los detalles innecesarios manteniendo el significado esencial.\n\nDocumento:\n{{contenido_del_documento}}",
+      "content_en": "Summarize the following document clearly and concisely for {{audience}}.\n\nFocus on the key ideas, main arguments, and any important conclusions. Omit unnecessary details while preserving the essential meaning.\n\nDocument:\n{{document_content}}",
+      "variables_es": [
+        "contenido_del_documento",
+        "audiencia"
+      ],
+      "variables_en": [
         "document_content",
         "audience"
       ]
     },
     {
       "id": "tpl-linkedin-post",
-      "title": "LinkedIn post from a key idea",
+      "title_es": "Post de LinkedIn desde una idea",
+      "title_en": "LinkedIn post from a key idea",
       "category": "writing",
       "tags": [],
-      "content": "Write a LinkedIn post based on the following idea: {{key_idea}}.\n\nTone: {{tone}}.\n\nThe post should start with a hook that grabs attention, develop the idea in 2-3 short paragraphs, and end with a question or call to action to encourage engagement. Use line breaks for readability. No hashtags unless they add clear value.",
-      "variables": [
+      "content_es": "Escribe un post de LinkedIn basado en la siguiente idea: {{idea_clave}}.\n\nTono: {{tono}}.\n\nEl post debe comenzar con un gancho que capte la atención, desarrollar la idea en 2-3 párrafos cortos y terminar con una pregunta o llamada a la acción para fomentar la interacción. Usa saltos de línea para facilitar la lectura. Sin hashtags a menos que aporten valor real.",
+      "content_en": "Write a LinkedIn post based on the following idea: {{key_idea}}.\n\nTone: {{tone}}.\n\nThe post should start with a hook that grabs attention, develop the idea in 2-3 short paragraphs, and end with a question or call to action to encourage engagement. Use line breaks for readability. No hashtags unless they add clear value.",
+      "variables_es": [
+        "idea_clave",
+        "tono"
+      ],
+      "variables_en": [
         "key_idea",
         "tone"
       ]
     },
     {
       "id": "tpl-rejection-email",
-      "title": "Polite rejection email",
+      "title_es": "Email de rechazo amable",
+      "title_en": "Polite rejection email",
       "category": "writing",
       "tags": [],
-      "content": "Write a professional and empathetic rejection email addressed to {{contact_name}} from {{company}}.\n\nThe reason for the rejection is: {{reason}}.\n\nThe tone should be warm, direct, and leave the door open for future opportunities. Keep it brief — no more than three short paragraphs.",
-      "variables": [
+      "content_es": "Escribe un email de rechazo profesional y empático dirigido a {{nombre_contacto}} de {{empresa}}.\n\nEl motivo del rechazo es: {{motivo}}.\n\nEl tono debe ser cálido, directo y dejar la puerta abierta a futuras oportunidades. Sé breve, no más de tres párrafos cortos.",
+      "content_en": "Write a professional and empathetic rejection email addressed to {{contact_name}} from {{company}}.\n\nThe reason for the rejection is: {{reason}}.\n\nThe tone should be warm, direct, and leave the door open for future opportunities. Keep it brief — no more than three short paragraphs.",
+      "variables_es": [
+        "nombre_contacto",
+        "empresa",
+        "motivo"
+      ],
+      "variables_en": [
         "contact_name",
         "company",
         "reason"
@@ -75,89 +106,139 @@
     },
     {
       "id": "tpl-component-naming",
-      "title": "Brainstorm component names",
+      "title_es": "Nombres para un componente",
+      "title_en": "Brainstorm component names",
       "category": "design",
       "tags": [],
-      "content": "Help me brainstorm clear and consistent names for a UI component.\n\nComponent purpose: {{component_purpose}}\nExisting component names in the design system for context: {{existing_names}}\n\nSuggest 5-8 name options. For each, explain briefly why it fits and any trade-offs. Favor names that are short, self-explanatory, and consistent with the naming patterns already in use.",
-      "variables": [
+      "content_es": "Ayúdame a encontrar nombres claros y consistentes para un componente de interfaz.\n\nPropósito del componente: {{proposito_del_componente}}\nNombres de componentes existentes en el sistema de diseño: {{nombres_existentes}}\n\nSugiere entre 5 y 8 opciones de nombre. Para cada una, explica brevemente por qué encaja y sus posibles desventajas. Prioriza nombres cortos, autoexplicativos y coherentes con los patrones de nomenclatura ya existentes.",
+      "content_en": "Help me brainstorm clear and consistent names for a UI component.\n\nComponent purpose: {{component_purpose}}\nExisting component names in the design system for context: {{existing_names}}\n\nSuggest 5-8 name options. For each, explain briefly why it fits and any trade-offs. Favor names that are short, self-explanatory, and consistent with the naming patterns already in use.",
+      "variables_es": [
+        "proposito_del_componente",
+        "nombres_existentes"
+      ],
+      "variables_en": [
         "component_purpose",
         "existing_names"
       ]
     },
     {
       "id": "tpl-ui-feedback",
-      "title": "UI design feedback review",
+      "title_es": "Revisión de diseño de interfaz",
+      "title_en": "UI design feedback review",
       "category": "design",
       "tags": [],
-      "content": "Review the following UI design and provide structured feedback.\n\nScreen or feature: {{screen_or_feature}}\nDesign goal: {{design_goal}}\n\nCover the following areas:\n1. Clarity — Is the purpose of each element immediately obvious?\n2. Hierarchy — Does the visual weight guide the user to the right actions?\n3. Consistency — Are spacing, typography, and colors consistent with the rest of the product?\n4. Friction — What steps could be removed or simplified?\n5. Suggestions — List 2-3 concrete improvements with reasoning.",
-      "variables": [
+      "content_es": "Revisa el siguiente diseño de interfaz y proporciona feedback estructurado.\n\nPantalla o funcionalidad: {{pantalla_o_funcionalidad}}\nObjetivo del diseño: {{objetivo_del_diseno}}\n\nCubre los siguientes aspectos:\n1. Claridad — ¿El propósito de cada elemento es inmediatamente obvio?\n2. Jerarquía — ¿El peso visual guía al usuario hacia las acciones correctas?\n3. Consistencia — ¿El espaciado, la tipografía y los colores son coherentes con el resto del producto?\n4. Fricción — ¿Qué pasos se podrían eliminar o simplificar?\n5. Sugerencias — Lista 2-3 mejoras concretas con su justificación.",
+      "content_en": "Review the following UI design and provide structured feedback.\n\nScreen or feature: {{screen_or_feature}}\nDesign goal: {{design_goal}}\n\nCover the following areas:\n1. Clarity — Is the purpose of each element immediately obvious?\n2. Hierarchy — Does the visual weight guide the user to the right actions?\n3. Consistency — Are spacing, typography, and colors consistent with the rest of the product?\n4. Friction — What steps could be removed or simplified?\n5. Suggestions — List 2-3 concrete improvements with reasoning.",
+      "variables_es": [
+        "pantalla_o_funcionalidad",
+        "objetivo_del_diseno"
+      ],
+      "variables_en": [
         "screen_or_feature",
         "design_goal"
       ]
     },
     {
       "id": "tpl-code-review",
-      "title": "Code review",
+      "title_es": "Revisión de código",
+      "title_en": "Code review",
       "category": "development",
       "tags": [],
-      "content": "Review the following {{language}} code as a senior engineer. Be direct and specific.\n\nCode:\n{{code}}\n\nCover:\n1. Correctness — Are there bugs, edge cases, or logic errors?\n2. Readability — Is the code clear and self-explanatory?\n3. Performance — Are there any unnecessary operations or inefficiencies?\n4. Security — Are there any obvious vulnerabilities?\n5. Suggestions — List the top 3 changes you would make and why.",
-      "variables": [
-        "code",
-        "language"
+      "content_es": "Revisa el siguiente código de {{lenguaje}} como si fueras un ingeniero senior. Sé directo y específico.\n\nCódigo:\n{{codigo}}\n\nCubre:\n1. Corrección — ¿Hay bugs, casos límite o errores de lógica?\n2. Legibilidad — ¿El código es claro y autoexplicativo?\n3. Rendimiento — ¿Hay operaciones innecesarias o ineficiencias?\n4. Seguridad — ¿Hay vulnerabilidades evidentes?\n5. Sugerencias — Lista los 3 cambios principales que harías y por qué.",
+      "content_en": "Review the following {{language}} code as a senior engineer. Be direct and specific.\n\nCode:\n{{code}}\n\nCover:\n1. Correctness — Are there bugs, edge cases, or logic errors?\n2. Readability — Is the code clear and self-explanatory?\n3. Performance — Are there any unnecessary operations or inefficiencies?\n4. Security — Are there any obvious vulnerabilities?\n5. Suggestions — List the top 3 changes you would make and why.",
+      "variables_es": [
+        "lenguaje",
+        "codigo"
+      ],
+      "variables_en": [
+        "language",
+        "code"
       ]
     },
     {
       "id": "tpl-write-tests",
-      "title": "Write unit tests",
+      "title_es": "Escribir tests unitarios",
+      "title_en": "Write unit tests",
       "category": "development",
       "tags": [],
-      "content": "Write comprehensive unit tests for the following {{language}} code using {{test_framework}}.\n\nCode to test:\n{{function_or_module}}\n\nInclude:\n- Happy path tests covering normal expected behavior\n- Edge cases (empty input, boundary values, large input)\n- Error cases (invalid input, expected exceptions)\n- Any non-obvious behavior that should be documented through tests\n\nTests should be clear, isolated, and easy to maintain.",
-      "variables": [
-        "function_or_module",
+      "content_es": "Escribe tests unitarios completos para el siguiente código de {{lenguaje}} usando {{framework_de_tests}}.\n\nCódigo a testear:\n{{funcion_o_modulo}}\n\nIncluye:\n- Tests del camino feliz cubriendo el comportamiento esperado normal\n- Casos límite (entrada vacía, valores en los límites, entrada grande)\n- Casos de error (entrada inválida, excepciones esperadas)\n- Cualquier comportamiento no obvio que deba documentarse mediante tests\n\nLos tests deben ser claros, aislados y fáciles de mantener.",
+      "content_en": "Write comprehensive unit tests for the following {{language}} code using {{test_framework}}.\n\nCode to test:\n{{function_or_module}}\n\nInclude:\n- Happy path tests covering normal expected behavior\n- Edge cases (empty input, boundary values, large input)\n- Error cases (invalid input, expected exceptions)\n- Any non-obvious behavior that should be documented through tests\n\nTests should be clear, isolated, and easy to maintain.",
+      "variables_es": [
+        "lenguaje",
+        "framework_de_tests",
+        "funcion_o_modulo"
+      ],
+      "variables_en": [
         "language",
-        "test_framework"
+        "test_framework",
+        "function_or_module"
       ]
     },
     {
       "id": "tpl-analyze-metrics",
-      "title": "Analyze data metrics",
+      "title_es": "Analizar métricas",
+      "title_en": "Analyze data metrics",
       "category": "analysis",
       "tags": [],
-      "content": "Analyze the following metrics and provide actionable insights.\n\nBusiness context: {{business_context}}\n\nData:\n{{metric_data}}\n\nYour analysis should:\n1. Identify the most significant trends (positive and negative)\n2. Flag any anomalies or unexpected patterns\n3. Explain likely causes for the key changes observed\n4. Suggest 2-3 concrete actions based on the data",
-      "variables": [
-        "metric_data",
-        "business_context"
+      "content_es": "Analiza las siguientes métricas y proporciona insights accionables.\n\nContexto del negocio: {{contexto_del_negocio}}\n\nDatos:\n{{datos_de_metricas}}\n\nTu análisis debe:\n1. Identificar las tendencias más significativas (positivas y negativas)\n2. Señalar anomalías o patrones inesperados\n3. Explicar las causas probables de los cambios clave observados\n4. Sugerir 2-3 acciones concretas basadas en los datos",
+      "content_en": "Analyze the following metrics and provide actionable insights.\n\nBusiness context: {{business_context}}\n\nData:\n{{metric_data}}\n\nYour analysis should:\n1. Identify the most significant trends (positive and negative)\n2. Flag any anomalies or unexpected patterns\n3. Explain likely causes for the key changes observed\n4. Suggest 2-3 concrete actions based on the data",
+      "variables_es": [
+        "contexto_del_negocio",
+        "datos_de_metricas"
+      ],
+      "variables_en": [
+        "business_context",
+        "metric_data"
       ]
     },
     {
       "id": "tpl-compare-options",
-      "title": "Compare options and recommend",
+      "title_es": "Comparar opciones y recomendar",
+      "title_en": "Compare options and recommend",
       "category": "analysis",
       "tags": [],
-      "content": "Compare the following options and give a clear recommendation.\n\nOptions: {{options}}\nDecision criteria: {{decision_criteria}}\n\nFor each option:\n- List the main strengths\n- List the main weaknesses or risks\n- Rate it against each decision criterion\n\nEnd with a clear recommendation and the top reason for it. If the decision depends on unknowns, state what information would change your recommendation.",
-      "variables": [
+      "content_es": "Compara las siguientes opciones y da una recomendación clara.\n\nOpciones: {{opciones}}\nCriterios de decisión: {{criterios_de_decision}}\n\nPara cada opción:\n- Lista sus principales fortalezas\n- Lista sus principales debilidades o riesgos\n- Valórala según cada criterio de decisión\n\nTermina con una recomendación clara y el motivo principal. Si la decisión depende de incógnitas, indica qué información cambiaría tu recomendación.",
+      "content_en": "Compare the following options and give a clear recommendation.\n\nOptions: {{options}}\nDecision criteria: {{decision_criteria}}\n\nFor each option:\n- List the main strengths\n- List the main weaknesses or risks\n- Rate it against each decision criterion\n\nEnd with a clear recommendation and the top reason for it. If the decision depends on unknowns, state what information would change your recommendation.",
+      "variables_es": [
+        "opciones",
+        "criterios_de_decision"
+      ],
+      "variables_en": [
         "options",
         "decision_criteria"
       ]
     },
     {
       "id": "tpl-meeting-minutes",
-      "title": "Meeting minutes from transcript",
+      "title_es": "Acta de reunión desde transcripción",
+      "title_en": "Meeting minutes from transcript",
       "category": "meetings",
       "tags": [],
-      "content": "Write clear and structured meeting minutes based on the following transcript.\n\nMeeting topic: {{meeting_topic}}\n\nTranscript:\n{{transcript}}\n\nFormat the minutes as follows:\n- Date and participants (if mentioned)\n- Key decisions made\n- Action items (owner + deadline if mentioned)\n- Open questions or blockers\n- Next steps\n\nKeep it concise. Avoid transcribing dialogue verbatim — capture outcomes and commitments only.",
-      "variables": [
-        "transcript",
-        "meeting_topic"
+      "content_es": "Redacta un acta clara y estructurada basándote en la siguiente transcripción.\n\nTema de la reunión: {{tema_de_la_reunion}}\n\nTranscripción:\n{{transcripcion}}\n\nFormato del acta:\n- Fecha y participantes (si se mencionan)\n- Decisiones clave tomadas\n- Puntos de acción (responsable + fecha límite si se menciona)\n- Preguntas abiertas o bloqueantes\n- Próximos pasos\n\nSé conciso. No transcribas el diálogo literalmente: captura resultados y compromisos únicamente.",
+      "content_en": "Write clear and structured meeting minutes based on the following transcript.\n\nMeeting topic: {{meeting_topic}}\n\nTranscript:\n{{transcript}}\n\nFormat the minutes as follows:\n- Date and participants (if mentioned)\n- Key decisions made\n- Action items (owner + deadline if mentioned)\n- Open questions or blockers\n- Next steps\n\nKeep it concise. Avoid transcribing dialogue verbatim — capture outcomes and commitments only.",
+      "variables_es": [
+        "tema_de_la_reunion",
+        "transcripcion"
+      ],
+      "variables_en": [
+        "meeting_topic",
+        "transcript"
       ]
     },
     {
       "id": "tpl-prepare-agenda",
-      "title": "Prepare a meeting agenda",
+      "title_es": "Preparar agenda de reunión",
+      "title_en": "Prepare a meeting agenda",
       "category": "meetings",
       "tags": [],
-      "content": "Prepare a structured agenda for a meeting with the following details:\n\nGoal: {{meeting_goal}}\nAttendees: {{attendees}}\nAvailable time: {{available_time}}\n\nThe agenda should:\n- Open with a 1-2 sentence summary of the meeting's purpose\n- List each agenda item with a time allocation\n- Flag which items require a decision vs. discussion vs. update\n- Reserve the last 5 minutes for next steps and action item assignment\n\nKeep the total number of items realistic for the time available. Prioritize the most critical items first.",
-      "variables": [
+      "content_es": "Prepara una agenda estructurada para una reunión con los siguientes detalles:\n\nObjetivo: {{objetivo_de_la_reunion}}\nAsistentes: {{asistentes}}\nTiempo disponible: {{tiempo_disponible}}\n\nLa agenda debe:\n- Abrir con un resumen de 1-2 frases sobre el propósito de la reunión\n- Listar cada punto del orden del día con su tiempo asignado\n- Indicar qué puntos requieren una decisión, discusión o actualización\n- Reservar los últimos 5 minutos para los próximos pasos y la asignación de tareas\n\nMantén un número de puntos realista para el tiempo disponible. Prioriza los más críticos primero.",
+      "content_en": "Prepare a structured agenda for a meeting with the following details:\n\nGoal: {{meeting_goal}}\nAttendees: {{attendees}}\nAvailable time: {{available_time}}\n\nThe agenda should:\n- Open with a 1-2 sentence summary of the meeting's purpose\n- List each agenda item with a time allocation\n- Flag which items require a decision vs. discussion vs. update\n- Reserve the last 5 minutes for next steps and action item assignment\n\nKeep the total number of items realistic for the time available. Prioritize the most critical items first.",
+      "variables_es": [
+        "objetivo_de_la_reunion",
+        "asistentes",
+        "tiempo_disponible"
+      ],
+      "variables_en": [
         "meeting_goal",
         "attendees",
         "available_time"

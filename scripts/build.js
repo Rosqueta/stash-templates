@@ -2,12 +2,12 @@ const fs = require("fs");
 const path = require("path");
 
 const CATEGORIES = [
-  { slug: "general", label: "General" },
-  { slug: "writing", label: "Writing" },
-  { slug: "design", label: "Design" },
-  { slug: "development", label: "Development" },
-  { slug: "analysis", label: "Analysis" },
-  { slug: "meetings", label: "Meetings" },
+  { slug: "general",     label_es: "General",    label_en: "General" },
+  { slug: "writing",     label_es: "Redacción",  label_en: "Writing" },
+  { slug: "design",      label_es: "Diseño",     label_en: "Design" },
+  { slug: "development", label_es: "Desarrollo", label_en: "Development" },
+  { slug: "analysis",    label_es: "Análisis",   label_en: "Analysis" },
+  { slug: "meetings",    label_es: "Reuniones",  label_en: "Meetings" },
 ];
 
 function parseFrontmatter(raw) {
@@ -33,7 +33,11 @@ function parseFrontmatter(raw) {
     }
   }
 
-  return { meta, body };
+  const parts = body.split(/\n---EN---\n/);
+  const content_es = parts[0]?.trim() || "";
+  const content_en = parts[1]?.trim() || "";
+
+  return { meta, content_es, content_en };
 }
 
 function toId(filename) {
@@ -61,14 +65,19 @@ for (const cat of CATEGORIES) {
 
     const entry = {
       id: toId(file),
-      title: parsed.meta.title || file.replace(/\.md$/, ""),
+      title_es: parsed.meta.title_es || file.replace(/\.md$/, ""),
+      title_en: parsed.meta.title_en || file.replace(/\.md$/, ""),
       category: cat.slug,
       tags: parsed.meta.tags || [],
-      content: parsed.body,
+      content_es: parsed.content_es,
+      content_en: parsed.content_en,
     };
 
-    if (parsed.meta.variables && parsed.meta.variables.length > 0) {
-      entry.variables = parsed.meta.variables;
+    if (parsed.meta.variables_es && parsed.meta.variables_es.length > 0) {
+      entry.variables_es = parsed.meta.variables_es;
+    }
+    if (parsed.meta.variables_en && parsed.meta.variables_en.length > 0) {
+      entry.variables_en = parsed.meta.variables_en;
     }
 
     templates.push(entry);
@@ -76,7 +85,7 @@ for (const cat of CATEGORIES) {
 }
 
 const output = {
-  version: 1,
+  version: 2,
   updatedAt: Math.floor(Date.now() / 1000),
   categories: CATEGORIES,
   templates,
