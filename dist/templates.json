@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": 1776343527,
+  "updatedAt": 1776461107,
   "categories": [
     {
       "slug": "general",
@@ -35,6 +35,82 @@
   ],
   "templates": [
     {
+      "id": "tpl-brainstorm-ideas",
+      "title_es": "Lluvia de ideas",
+      "title_en": "Brainstorm ideas",
+      "category": "general",
+      "tags": [],
+      "content_es": "Genera {{numero_de_ideas}} ideas creativas y variadas sobre {{tema}}. Contexto: {{contexto}}. Para cada idea, incluye una frase de descripción breve. Prioriza la originalidad y la diversidad de enfoques. No te autocensures: incluye ideas ambiciosas junto a ideas más prácticas.",
+      "content_en": "Generate {{number_of_ideas}} creative and varied ideas about {{topic}}. Context: {{context}}. For each idea, include a brief description sentence. Prioritize originality and diversity of approaches. Do not self-censor: include ambitious ideas alongside more practical ones.",
+      "variables_es": [
+        "tema",
+        "contexto",
+        "numero_de_ideas"
+      ],
+      "variables_en": [
+        "topic",
+        "context",
+        "number_of_ideas"
+      ]
+    },
+    {
+      "id": "tpl-create-checklist",
+      "title_es": "Crear un checklist",
+      "title_en": "Create a checklist",
+      "category": "general",
+      "tags": [],
+      "content_es": "Crea un checklist completo para que {{rol_responsable}} pueda completar correctamente {{tarea_o_proceso}}. Contexto: {{contexto}}. Agrupa los elementos en fases o categorías lógicas. Cada ítem debe ser accionable y verificable. Incluye los pasos que se suelen olvidar o pasar por alto. El objetivo es que alguien pueda seguirlo sin necesitar instrucciones adicionales.",
+      "content_en": "Create a comprehensive checklist so {{responsible_role}} can successfully complete {{task_or_process}}. Context: {{context}}. Group items into logical phases or categories. Each item should be actionable and verifiable. Include steps that are often forgotten or overlooked. The goal is for someone to follow it without needing additional instructions.",
+      "variables_es": [
+        "tarea_o_proceso",
+        "contexto",
+        "rol_responsable"
+      ],
+      "variables_en": [
+        "task_or_process",
+        "context",
+        "responsible_role"
+      ]
+    },
+    {
+      "id": "tpl-create-faq",
+      "title_es": "Crear una FAQ",
+      "title_en": "Create a FAQ",
+      "category": "general",
+      "tags": [],
+      "content_es": "Crea una FAQ de {{numero_de_preguntas}} preguntas y respuestas sobre {{tema}} dirigida a {{audiencia}}. Las preguntas deben ser las que realmente haría alguien que no conoce el tema. Las respuestas deben ser claras, directas y evitar el lenguaje técnico innecesario. Ordénalas de más básica a más específica.",
+      "content_en": "Create a FAQ with {{number_of_questions}} questions and answers about {{topic}} aimed at {{audience}}. The questions should be ones that someone unfamiliar with the topic would genuinely ask. Answers should be clear, direct, and avoid unnecessary technical language. Order them from most basic to most specific.",
+      "variables_es": [
+        "tema",
+        "audiencia",
+        "numero_de_preguntas"
+      ],
+      "variables_en": [
+        "topic",
+        "audience",
+        "number_of_questions"
+      ]
+    },
+    {
+      "id": "tpl-expand-idea",
+      "title_es": "Desarrollar una idea",
+      "title_en": "Expand an idea",
+      "category": "general",
+      "tags": [],
+      "content_es": "Desarrolla la siguiente idea en profundidad pensando en {{audiencia_objetivo}}: {{idea_inicial}}. Explora los diferentes ángulos de la idea, sus implicaciones, posibles objeciones y cómo responderlas. El formato de salida debe ser {{formato_de_salida}}. Sé específico y aporta datos, argumentos o ejemplos que refuercen la idea.",
+      "content_en": "Develop the following idea in depth with {{target_audience}} in mind: {{initial_idea}}. Explore the different angles of the idea, its implications, possible objections and how to address them. The output format should be {{output_format}}. Be specific and provide data, arguments, or examples that reinforce the idea.",
+      "variables_es": [
+        "idea_inicial",
+        "audiencia_objetivo",
+        "formato_de_salida"
+      ],
+      "variables_en": [
+        "initial_idea",
+        "target_audience",
+        "output_format"
+      ]
+    },
+    {
       "id": "tpl-explain-concept",
       "title_es": "Explicar un concepto",
       "title_en": "Explain a concept",
@@ -49,6 +125,82 @@
       "variables_en": [
         "concept",
         "background_level"
+      ]
+    },
+    {
+      "id": "tpl-generate-examples",
+      "title_es": "Generar ejemplos",
+      "title_en": "Generate examples",
+      "category": "general",
+      "tags": [],
+      "content_es": "Genera {{numero_de_ejemplos}} ejemplos concretos y variados de {{concepto}} en el contexto de {{contexto}}. Cada ejemplo debe ser específico, realista y fácil de entender. Incluye una frase de explicación breve para cada uno que aclare por qué ilustra bien el concepto. Varía el nivel de complejidad entre los ejemplos.",
+      "content_en": "Generate {{number_of_examples}} concrete and varied examples of {{concept}} in the context of {{context}}. Each example should be specific, realistic, and easy to understand. Include a brief explanation sentence for each one that clarifies why it illustrates the concept well. Vary the complexity level across the examples.",
+      "variables_es": [
+        "concepto",
+        "numero_de_ejemplos",
+        "contexto"
+      ],
+      "variables_en": [
+        "concept",
+        "number_of_examples",
+        "context"
+      ]
+    },
+    {
+      "id": "tpl-give-feedback",
+      "title_es": "Dar feedback constructivo",
+      "title_en": "Give constructive feedback",
+      "category": "general",
+      "tags": [],
+      "content_es": "Redacta un feedback constructivo y equilibrado sobre {{trabajo_o_entregable}}. Aspectos positivos a destacar: {{aspectos_positivos}}. Áreas de mejora: {{areas_de_mejora}}. El feedback debe ser específico, accionable y empático. Usa un tono directo pero respetuoso. Empieza por lo positivo, luego las mejoras con sugerencias concretas, y termina con una nota de aliento.",
+      "content_en": "Write constructive and balanced feedback about {{work_or_deliverable}}. Positive aspects to highlight: {{positive_aspects}}. Areas for improvement: {{areas_for_improvement}}. The feedback should be specific, actionable, and empathetic. Use a direct but respectful tone. Start with the positives, then cover improvements with concrete suggestions, and end with an encouraging note.",
+      "variables_es": [
+        "trabajo_o_entregable",
+        "aspectos_positivos",
+        "areas_de_mejora"
+      ],
+      "variables_en": [
+        "work_or_deliverable",
+        "positive_aspects",
+        "areas_for_improvement"
+      ]
+    },
+    {
+      "id": "tpl-rewrite-tone",
+      "title_es": "Reescribir con otro tono",
+      "title_en": "Rewrite in a different tone",
+      "category": "general",
+      "tags": [],
+      "content_es": "Reescribe el siguiente texto con un tono {{tono_deseado}}, adaptándolo para una audiencia de {{audiencia}}. Mantén las ideas principales pero ajusta el vocabulario, la estructura y la actitud del texto. El resultado debe sentirse natural, no como una traducción de estilos. Texto original: {{texto_original}}",
+      "content_en": "Rewrite the following text in a {{desired_tone}} tone, adapting it for an audience of {{audience}}. Keep the main ideas but adjust the vocabulary, structure, and attitude of the text. The result should feel natural, not like a style translation. Original text: {{original_text}}",
+      "variables_es": [
+        "texto_original",
+        "tono_deseado",
+        "audiencia"
+      ],
+      "variables_en": [
+        "original_text",
+        "desired_tone",
+        "audience"
+      ]
+    },
+    {
+      "id": "tpl-simplify-text",
+      "title_es": "Simplificar un texto",
+      "title_en": "Simplify a text",
+      "category": "general",
+      "tags": [],
+      "content_es": "Simplifica el siguiente texto para que sea comprensible por alguien con un nivel de {{nivel_de_lectura}}. Usa frases cortas, vocabulario sencillo y elimina cualquier jerga o tecnicismo que no sea imprescindible. El resultado no debe superar {{longitud_maxima}} palabras. Mantén el significado esencial. Texto original: {{texto_original}}",
+      "content_en": "Simplify the following text so it is understandable by someone with a {{reading_level}} level. Use short sentences, simple vocabulary, and remove any jargon or technical terms that are not essential. The result should not exceed {{max_length}} words. Keep the essential meaning. Original text: {{original_text}}",
+      "variables_es": [
+        "texto_original",
+        "nivel_de_lectura",
+        "longitud_maxima"
+      ],
+      "variables_en": [
+        "original_text",
+        "reading_level",
+        "max_length"
       ]
     },
     {
@@ -69,6 +221,149 @@
       ]
     },
     {
+      "id": "tpl-translate-text",
+      "title_es": "Traducir un texto",
+      "title_en": "Translate a text",
+      "category": "general",
+      "tags": [],
+      "content_es": "Traduce el siguiente texto al {{idioma_destino}} manteniendo el tono {{tono}} y preservando el significado original. Adapta las expresiones culturales cuando sea necesario para que suenen naturales en el idioma de destino. No hagas una traducción literal si eso perjudica la fluidez. Texto original: {{texto_original}}",
+      "content_en": "Translate the following text to {{target_language}}, maintaining a {{tone}} tone and preserving the original meaning. Adapt cultural expressions when needed so they sound natural in the target language. Avoid literal translation if it hurts fluency. Original text: {{original_text}}",
+      "variables_es": [
+        "texto_original",
+        "idioma_destino",
+        "tono"
+      ],
+      "variables_en": [
+        "original_text",
+        "target_language",
+        "tone"
+      ]
+    },
+    {
+      "id": "tpl-write-bio",
+      "title_es": "Redactar una bio profesional",
+      "title_en": "Write a professional bio",
+      "category": "general",
+      "tags": [],
+      "content_es": "Redacta una bio profesional en tercera persona para {{nombre}}, que trabaja como {{rol_actual}}. Logros o datos clave a incluir: {{logros_clave}}. El tono debe ser {{tono}}. La bio debe tener entre 80 y 120 palabras, ser memorable y reflejar la personalidad profesional de la persona sin sonar genérica.",
+      "content_en": "Write a professional third-person bio for {{name}}, who works as {{current_role}}. Key achievements or facts to include: {{key_achievements}}. The tone should be {{tone}}. The bio should be between 80 and 120 words, be memorable, and reflect the person's professional personality without sounding generic.",
+      "variables_es": [
+        "nombre",
+        "rol_actual",
+        "logros_clave",
+        "tono"
+      ],
+      "variables_en": [
+        "name",
+        "current_role",
+        "key_achievements",
+        "tone"
+      ]
+    },
+    {
+      "id": "tpl-blog-post-outline",
+      "title_es": "Esquema de artículo de blog",
+      "title_en": "Blog post outline",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Crea un esquema detallado para un artículo de blog sobre {{tema_del_articulo}} dirigido a {{audiencia_objetivo}}. El ángulo o perspectiva principal debe ser: {{angulo_o_perspectiva}}. El esquema debe incluir: título principal con gancho, introducción con el problema que resuelve, 4-6 secciones con sus subtítulos y los 2-3 puntos clave de cada una, y una conclusión con llamada a la acción. Indica también la extensión recomendada para cada sección.",
+      "content_en": "Create a detailed outline for a blog post about {{article_topic}} aimed at {{target_audience}}. The main angle or perspective should be: {{angle_or_perspective}}. The outline should include: a headline with a hook, an introduction stating the problem it solves, 4-6 sections with subheadings and 2-3 key points each, and a conclusion with a call to action. Also indicate the recommended length for each section.",
+      "variables_es": [
+        "tema_del_articulo",
+        "audiencia_objetivo",
+        "angulo_o_perspectiva"
+      ],
+      "variables_en": [
+        "article_topic",
+        "target_audience",
+        "angle_or_perspective"
+      ]
+    },
+    {
+      "id": "tpl-case-study",
+      "title_es": "Caso de éxito",
+      "title_en": "Case study",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Redacta un caso de éxito sobre {{cliente}}. El problema inicial era: {{problema_inicial}}. La solución aplicada fue: {{solucion_aplicada}}. Los resultados obtenidos: {{resultados}}. Usa la estructura Problema, Solución, Resultado. El texto debe ser concreto, creíble y orientado a convencer a futuros clientes. Incluye citas o datos específicos. Tono profesional y narrativo. Máximo 300 palabras.",
+      "content_en": "Write a case study about {{client}}. The initial problem was: {{initial_problem}}. The solution applied was: {{solution_applied}}. The results obtained: {{results}}. Use the Problem, Solution, Result structure. The text should be concrete, credible, and aimed at convincing future clients. Include specific quotes or data. Professional and narrative tone. Maximum 300 words.",
+      "variables_es": [
+        "cliente",
+        "problema_inicial",
+        "solucion_aplicada",
+        "resultados"
+      ],
+      "variables_en": [
+        "client",
+        "initial_problem",
+        "solution_applied",
+        "results"
+      ]
+    },
+    {
+      "id": "tpl-cold-email",
+      "title_es": "Email de presentación en frío",
+      "title_en": "Cold outreach email",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe un email de contacto en frío para {{nombre_destinatario}} de {{empresa_destinatario}}, enviado por {{remitente}}. La propuesta de valor es: {{propuesta_de_valor}}. El email debe ser breve (máximo 5 líneas), personalizado, centrado en el beneficio para el destinatario y con una llamada a la acción clara y de bajo compromiso. Evita el lenguaje de ventas agresivo.",
+      "content_en": "Write a cold outreach email to {{recipient_name}} at {{recipient_company}}, sent by {{sender_name}}. The value proposition is: {{value_proposition}}. The email should be brief (5 lines max), personalized, focused on the recipient's benefit, and include a clear, low-commitment call to action. Avoid aggressive sales language.",
+      "variables_es": [
+        "nombre_destinatario",
+        "empresa_destinatario",
+        "propuesta_de_valor",
+        "remitente"
+      ],
+      "variables_en": [
+        "recipient_name",
+        "recipient_company",
+        "value_proposition",
+        "sender_name"
+      ]
+    },
+    {
+      "id": "tpl-cover-letter",
+      "title_es": "Carta de presentación",
+      "title_en": "Cover letter",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe una carta de presentación para {{nombre_candidato}}, que aplica al puesto de {{puesto_al_que_aplica}} en {{empresa_objetivo}}. Logro o experiencia clave a destacar: {{logro_destacado}}. La carta debe ser de 3 párrafos: conexión con la empresa, propuesta de valor con evidencia concreta, y llamada a la acción. Tono seguro pero no arrogante. Máximo 250 palabras.",
+      "content_en": "Write a cover letter for {{candidate_name}}, applying for the {{position_applying_for}} role at {{target_company}}. Key achievement or experience to highlight: {{key_achievement}}. The letter should have 3 paragraphs: connection to the company, value proposition with concrete evidence, and call to action. Confident but not arrogant tone. Maximum 250 words.",
+      "variables_es": [
+        "nombre_candidato",
+        "puesto_al_que_aplica",
+        "empresa_objetivo",
+        "logro_destacado"
+      ],
+      "variables_en": [
+        "candidate_name",
+        "position_applying_for",
+        "target_company",
+        "key_achievement"
+      ]
+    },
+    {
+      "id": "tpl-job-posting",
+      "title_es": "Oferta de empleo",
+      "title_en": "Job posting",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Redacta una oferta de empleo para el puesto de {{puesto}} en {{empresa}}. Requisitos clave: {{requisitos_clave}}. Beneficios: {{beneficios}}. La oferta debe ser atractiva y honesta, con una descripción del rol que vaya más allá de las tareas y explique el impacto real del puesto. Evita el lenguaje exclusivo o los requisitos inflados. Incluye un párrafo sobre la cultura del equipo.",
+      "content_en": "Write a job posting for the {{position}} role at {{company}}. Key requirements: {{key_requirements}}. Benefits: {{benefits}}. The posting should be appealing and honest, with a role description that goes beyond tasks and explains the real impact of the position. Avoid exclusionary language or inflated requirements. Include a paragraph about team culture.",
+      "variables_es": [
+        "puesto",
+        "empresa",
+        "requisitos_clave",
+        "beneficios"
+      ],
+      "variables_en": [
+        "position",
+        "company",
+        "key_requirements",
+        "benefits"
+      ]
+    },
+    {
       "id": "tpl-linkedin-post",
       "title_es": "Post de LinkedIn desde una idea",
       "title_en": "LinkedIn post from a key idea",
@@ -83,6 +378,86 @@
       "variables_en": [
         "key_idea",
         "tone"
+      ]
+    },
+    {
+      "id": "tpl-newsletter-section",
+      "title_es": "Sección de newsletter",
+      "title_en": "Newsletter section",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe una sección para un newsletter sobre {{tema_de_la_seccion}} dirigido a {{audiencia}}. El tono debe ser {{tono}}. La sección debe comenzar con un titular atractivo, seguido de 2-3 párrafos que aporten valor real al lector. Incluye al menos un dato, ejemplo o perspectiva que no sea obvia. Termina con una frase que invite a seguir leyendo o a tomar acción.",
+      "content_en": "Write a newsletter section about {{section_topic}} aimed at {{audience}}. The tone should be {{tone}}. The section should start with an engaging headline, followed by 2-3 paragraphs that provide real value to the reader. Include at least one data point, example, or non-obvious perspective. End with a sentence that invites further reading or action.",
+      "variables_es": [
+        "tema_de_la_seccion",
+        "audiencia",
+        "tono"
+      ],
+      "variables_en": [
+        "section_topic",
+        "audience",
+        "tone"
+      ]
+    },
+    {
+      "id": "tpl-onboarding-email",
+      "title_es": "Email de bienvenida",
+      "title_en": "Onboarding welcome email",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe un email de bienvenida para {{nombre_usuario}}, que acaba de registrarse en {{nombre_producto}}. Primeros pasos recomendados: {{primeros_pasos}}. Recurso clave a destacar: {{recurso_clave}}. El email debe ser cálido y motivador, ayudar al usuario a tener su primer éxito rápido y reducir la ansiedad del inicio. Máximo 200 palabras. Un solo call to action claro al final.",
+      "content_en": "Write a welcome email for {{user_name}}, who just signed up for {{product_name}}. Recommended first steps: {{first_steps}}. Key resource to highlight: {{key_resource}}. The email should be warm and motivating, help the user achieve their first quick win, and reduce onboarding anxiety. Maximum 200 words. One clear call to action at the end.",
+      "variables_es": [
+        "nombre_usuario",
+        "nombre_producto",
+        "primeros_pasos",
+        "recurso_clave"
+      ],
+      "variables_en": [
+        "user_name",
+        "product_name",
+        "first_steps",
+        "key_resource"
+      ]
+    },
+    {
+      "id": "tpl-press-release",
+      "title_es": "Nota de prensa",
+      "title_en": "Press release",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Redacta una nota de prensa profesional titulada \"{{titulo_del_anuncio}}\" para {{empresa}}. Detalles clave del anuncio: {{detalles_clave}}. Incluye una cita de {{portavoz}}. Sigue el formato estándar: titular, subtítulo, ciudad/fecha, lead con las 5 W, cuerpo con detalles y contexto, cita, y boilerplate de la empresa. Tono formal y en tercera persona.",
+      "content_en": "Write a professional press release titled \"{{announcement_title}}\" for {{company}}. Key announcement details: {{key_details}}. Include a quote from {{spokesperson}}. Follow the standard format: headline, subheadline, city/date, lead with the 5 Ws, body with details and context, quote, and company boilerplate. Formal tone in third person.",
+      "variables_es": [
+        "titulo_del_anuncio",
+        "empresa",
+        "detalles_clave",
+        "portavoz"
+      ],
+      "variables_en": [
+        "announcement_title",
+        "company",
+        "key_details",
+        "spokesperson"
+      ]
+    },
+    {
+      "id": "tpl-product-description",
+      "title_es": "Descripción de producto",
+      "title_en": "Product description",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe una descripción de producto para {{nombre_producto}}. Características clave: {{caracteristicas_clave}}. Cliente ideal: {{cliente_ideal}}. La descripción debe conectar las características con los beneficios reales para el cliente, usar lenguaje sensorial y concreto, y terminar con una frase que impulse a la acción. Máximo 150 palabras. Evita los clichés de marketing.",
+      "content_en": "Write a product description for {{product_name}}. Key features: {{key_features}}. Ideal customer: {{ideal_customer}}. The description should connect features to real customer benefits, use sensory and concrete language, and end with an action-driving sentence. Maximum 150 words. Avoid marketing clichés.",
+      "variables_es": [
+        "nombre_producto",
+        "caracteristicas_clave",
+        "cliente_ideal"
+      ],
+      "variables_en": [
+        "product_name",
+        "key_features",
+        "ideal_customer"
       ]
     },
     {
@@ -105,6 +480,84 @@
       ]
     },
     {
+      "id": "tpl-social-caption",
+      "title_es": "Caption para redes sociales",
+      "title_en": "Social media caption",
+      "category": "writing",
+      "tags": [],
+      "content_es": "Escribe un caption para {{plataforma}} sobre {{tema_o_producto}}. Tono: {{tono}}. Llamada a la acción: {{llamada_a_la_accion}}. El caption debe captar la atención en las primeras palabras, aportar valor o generar emoción, y terminar con la llamada a la acción de forma natural. Adapta el estilo y la longitud a las convenciones de {{plataforma}}. Propón también 3 opciones de hashtags relevantes.",
+      "content_en": "Write a caption for {{platform}} about {{topic_or_product}}. Tone: {{tone}}. Call to action: {{call_to_action}}. The caption should grab attention in the first words, provide value or generate emotion, and end with the call to action naturally. Adapt the style and length to {{platform}} conventions. Also suggest 3 relevant hashtag options.",
+      "variables_es": [
+        "tema_o_producto",
+        "plataforma",
+        "tono",
+        "llamada_a_la_accion"
+      ],
+      "variables_en": [
+        "topic_or_product",
+        "platform",
+        "tone",
+        "call_to_action"
+      ]
+    },
+    {
+      "id": "tpl-accessibility-review",
+      "title_es": "Revisión de accesibilidad",
+      "title_en": "Accessibility review",
+      "category": "design",
+      "tags": [],
+      "content_es": "Realiza una revisión de accesibilidad de {{pantalla_o_componente}} en {{nombre_producto}} con el objetivo de cumplir el nivel {{nivel_wcag_objetivo}} de las WCAG. Evalúa: contraste de color, jerarquía de encabezados, etiquetas de formulario, texto alternativo en imágenes, navegación por teclado, y compatibilidad con lectores de pantalla. Para cada problema detectado indica el criterio WCAG afectado, el impacto en el usuario y la corrección recomendada.",
+      "content_en": "Conduct an accessibility review of {{screen_or_component}} in {{product_name}} with the goal of meeting WCAG {{target_wcag_level}} level. Evaluate: color contrast, heading hierarchy, form labels, image alt text, keyboard navigation, and screen reader compatibility. For each issue found, indicate the affected WCAG criterion, the user impact, and the recommended fix.",
+      "variables_es": [
+        "nombre_producto",
+        "pantalla_o_componente",
+        "nivel_wcag_objetivo"
+      ],
+      "variables_en": [
+        "product_name",
+        "screen_or_component",
+        "target_wcag_level"
+      ]
+    },
+    {
+      "id": "tpl-color-palette",
+      "title_es": "Sugerir paleta de colores",
+      "title_en": "Suggest a color palette",
+      "category": "design",
+      "tags": [],
+      "content_es": "Sugiere una paleta de colores para una marca de tipo {{tipo_de_marca}} en el sector {{sector}}. Valores de marca a comunicar: {{valores_de_marca}}. Para cada color propuesto incluye: el código hexadecimal, el nombre del color, el rol en la paleta (primario, secundario, acento, neutro), la psicología del color y casos de uso recomendados. Explica también cómo los colores trabajan juntos y el ratio de uso sugerido.",
+      "content_en": "Suggest a color palette for a {{brand_type}} brand in the {{industry}} sector. Brand values to communicate: {{brand_values}}. For each proposed color include: the hex code, color name, its role in the palette (primary, secondary, accent, neutral), color psychology, and recommended use cases. Also explain how the colors work together and the suggested usage ratio.",
+      "variables_es": [
+        "tipo_de_marca",
+        "valores_de_marca",
+        "sector"
+      ],
+      "variables_en": [
+        "brand_type",
+        "brand_values",
+        "industry"
+      ]
+    },
+    {
+      "id": "tpl-competitive-analysis-ux",
+      "title_es": "Análisis competitivo de UX",
+      "title_en": "UX competitive analysis",
+      "category": "design",
+      "tags": [],
+      "content_es": "Realiza un análisis competitivo de UX del flujo de {{flujo_a_analizar}} comparando {{producto_propio}} con {{competidores}}. Para cada producto analizado evalúa: claridad del flujo, número de pasos, puntos de fricción, elementos de confianza, y diferenciadores únicos. Presenta los hallazgos en una tabla comparativa y termina con 3 recomendaciones de mejora para {{producto_propio}} basadas en el análisis.",
+      "content_en": "Conduct a UX competitive analysis of the {{flow_to_analyze}} flow, comparing {{own_product}} with {{competitors}}. For each product analyzed, evaluate: flow clarity, number of steps, friction points, trust elements, and unique differentiators. Present findings in a comparison table and end with 3 improvement recommendations for {{own_product}} based on the analysis.",
+      "variables_es": [
+        "producto_propio",
+        "competidores",
+        "flujo_a_analizar"
+      ],
+      "variables_en": [
+        "own_product",
+        "competitors",
+        "flow_to_analyze"
+      ]
+    },
+    {
       "id": "tpl-component-naming",
       "title_es": "Nombres para un componente",
       "title_en": "Brainstorm component names",
@@ -119,6 +572,103 @@
       "variables_en": [
         "component_purpose",
         "existing_names"
+      ]
+    },
+    {
+      "id": "tpl-copywriting-ui",
+      "title_es": "Textos para interfaz de usuario",
+      "title_en": "UI copywriting",
+      "category": "design",
+      "tags": [],
+      "content_es": "Escribe los textos de interfaz para {{accion_o_pantalla}} en {{nombre_producto}}. Tono de marca: {{tono_de_marca}}. Incluye: título de la pantalla o modal, descripción o subtítulo, texto de los botones de acción principal y secundario, mensajes de éxito y error, y placeholder de campos de formulario si aplica. Los textos deben ser claros, orientados a la acción y consistentes con el tono de marca. Propón 2 variantes para cada texto principal.",
+      "content_en": "Write UI copy for {{action_or_screen}} in {{product_name}}. Brand tone: {{brand_tone}}. Include: screen or modal title, description or subtitle, primary and secondary action button text, success and error messages, and form field placeholders if applicable. Texts should be clear, action-oriented, and consistent with the brand tone. Propose 2 variants for each main text.",
+      "variables_es": [
+        "nombre_producto",
+        "accion_o_pantalla",
+        "tono_de_marca"
+      ],
+      "variables_en": [
+        "product_name",
+        "action_or_screen",
+        "brand_tone"
+      ]
+    },
+    {
+      "id": "tpl-design-brief",
+      "title_es": "Brief de diseño",
+      "title_en": "Design brief",
+      "category": "design",
+      "tags": [],
+      "content_es": "Redacta un brief de diseño para {{nombre_proyecto}}. Objetivo principal: {{objetivo_principal}}. Audiencia: {{audiencia}}. Restricciones conocidas: {{restricciones}}. El brief debe incluir: contexto y problema a resolver, objetivos de diseño medibles, descripción de la audiencia con sus necesidades, alcance del proyecto, criterios de éxito y restricciones de tiempo, tecnología o marca. Formato estructurado y conciso.",
+      "content_en": "Write a design brief for {{project_name}}. Main objective: {{main_objective}}. Audience: {{audience}}. Known constraints: {{constraints}}. The brief should include: context and problem to solve, measurable design objectives, audience description with their needs, project scope, success criteria, and time/technology/brand constraints. Structured and concise format.",
+      "variables_es": [
+        "nombre_proyecto",
+        "objetivo_principal",
+        "audiencia",
+        "restricciones"
+      ],
+      "variables_en": [
+        "project_name",
+        "main_objective",
+        "audience",
+        "constraints"
+      ]
+    },
+    {
+      "id": "tpl-design-critique",
+      "title_es": "Crítica de diseño estructurada",
+      "title_en": "Structured design critique",
+      "category": "design",
+      "tags": [],
+      "content_es": "Realiza una crítica estructurada del diseño {{nombre_del_diseno}}, cuyo objetivo es {{objetivo_del_diseno}} para una audiencia de {{audiencia}}. Evalúa los siguientes aspectos: jerarquía visual y flujo de atención, claridad del mensaje principal, consistencia visual, usabilidad y accesibilidad, y adecuación al contexto y audiencia. Para cada aspecto indica qué funciona bien, qué podría mejorar y una sugerencia concreta. Termina con las 3 mejoras de mayor impacto.",
+      "content_en": "Conduct a structured critique of the {{design_name}} design, whose objective is {{design_objective}} for an audience of {{audience}}. Evaluate the following aspects: visual hierarchy and attention flow, clarity of the main message, visual consistency, usability and accessibility, and appropriateness for the context and audience. For each aspect indicate what works well, what could be improved, and a concrete suggestion. End with the 3 highest-impact improvements.",
+      "variables_es": [
+        "nombre_del_diseno",
+        "objetivo_del_diseno",
+        "audiencia"
+      ],
+      "variables_en": [
+        "design_name",
+        "design_objective",
+        "audience"
+      ]
+    },
+    {
+      "id": "tpl-error-messages",
+      "title_es": "Redactar mensajes de error",
+      "title_en": "Write error messages",
+      "category": "design",
+      "tags": [],
+      "content_es": "Redacta mensajes de error para {{nombre_producto}} relacionados con {{tipo_de_error}}. Tono de marca: {{tono_de_marca}}. Para cada mensaje incluye: título del error, descripción clara de lo que ocurrió, causa probable, y pasos concretos para resolverlo. Los mensajes no deben culpar al usuario, deben ser humanos y ofrecer siempre una salida. Propón al menos 3 variantes según la severidad del error.",
+      "content_en": "Write error messages for {{product_name}} related to {{error_type}}. Brand tone: {{brand_tone}}. For each message include: error title, clear description of what happened, probable cause, and concrete steps to resolve it. Messages should not blame the user, should be human, and always offer a way out. Propose at least 3 variants based on error severity.",
+      "variables_es": [
+        "nombre_producto",
+        "tipo_de_error",
+        "tono_de_marca"
+      ],
+      "variables_en": [
+        "product_name",
+        "error_type",
+        "brand_tone"
+      ]
+    },
+    {
+      "id": "tpl-onboarding-flow",
+      "title_es": "Diseñar flujo de onboarding",
+      "title_en": "Design an onboarding flow",
+      "category": "design",
+      "tags": [],
+      "content_es": "Diseña el flujo de onboarding para nuevos usuarios de {{nombre_producto}}. La acción clave que el usuario debe completar es: {{accion_clave_del_producto}}. Perfil del nuevo usuario: {{perfil_de_nuevo_usuario}}. Define cada paso del flujo incluyendo: objetivo del paso, contenido o acción requerida, criterio de avance y posibles puntos de abandono. El onboarding debe llevar al usuario a su primer momento de valor en el menor número de pasos posible.",
+      "content_en": "Design the onboarding flow for new {{product_name}} users. The core action the user must complete is: {{core_product_action}}. New user profile: {{new_user_profile}}. Define each step of the flow including: step objective, required content or action, advancement criteria, and potential drop-off points. The onboarding should bring the user to their first value moment in as few steps as possible.",
+      "variables_es": [
+        "nombre_producto",
+        "accion_clave_del_producto",
+        "perfil_de_nuevo_usuario"
+      ],
+      "variables_en": [
+        "product_name",
+        "core_product_action",
+        "new_user_profile"
       ]
     },
     {
@@ -139,6 +689,63 @@
       ]
     },
     {
+      "id": "tpl-usability-review",
+      "title_es": "Revisión de usabilidad",
+      "title_en": "Usability review",
+      "category": "design",
+      "tags": [],
+      "content_es": "Realiza una revisión de usabilidad del flujo de {{flujo_a_revisar}} en {{nombre_producto}} desde la perspectiva de un usuario con perfil {{perfil_de_usuario}}. Evalúa: claridad de la navegación, carga cognitiva, consistencia visual, feedback del sistema, manejo de errores y accesibilidad básica. Para cada problema detectado, clasifícalo por severidad (crítico, importante, menor) y propón una solución concreta.",
+      "content_en": "Conduct a usability review of the {{flow_to_review}} flow in {{product_name}} from the perspective of a {{user_profile}} user. Evaluate: navigation clarity, cognitive load, visual consistency, system feedback, error handling, and basic accessibility. For each issue found, classify it by severity (critical, important, minor) and propose a concrete solution.",
+      "variables_es": [
+        "nombre_producto",
+        "flujo_a_revisar",
+        "perfil_de_usuario"
+      ],
+      "variables_en": [
+        "product_name",
+        "flow_to_review",
+        "user_profile"
+      ]
+    },
+    {
+      "id": "tpl-user-persona",
+      "title_es": "Crear una user persona",
+      "title_en": "Create a user persona",
+      "category": "design",
+      "tags": [],
+      "content_es": "Crea una user persona detallada para {{nombre_producto}}. Tipo de usuario: {{tipo_de_usuario}}. Comportamientos clave observados: {{comportamientos_clave}}. La persona debe incluir: nombre ficticio y foto descrita, datos demográficos básicos, objetivos principales, frustraciones y pain points, comportamientos digitales, y una cita representativa de lo que diría este usuario. Debe ser realista, no estereotipada.",
+      "content_en": "Create a detailed user persona for {{product_name}}. User type: {{user_type}}. Key observed behaviors: {{key_behaviors}}. The persona should include: a fictional name and described photo, basic demographic data, main goals, frustrations and pain points, digital behaviors, and a representative quote from what this user would say. It should be realistic, not stereotyped.",
+      "variables_es": [
+        "nombre_producto",
+        "tipo_de_usuario",
+        "comportamientos_clave"
+      ],
+      "variables_en": [
+        "product_name",
+        "user_type",
+        "key_behaviors"
+      ]
+    },
+    {
+      "id": "tpl-api-design",
+      "title_es": "Diseñar una API",
+      "title_en": "Design an API",
+      "category": "development",
+      "tags": [],
+      "content_es": "Diseña una API RESTful para gestionar {{nombre_del_recurso}}. Operaciones necesarias: {{operaciones_necesarias}}. Clientes que consumirán la API: {{tipo_de_clientes}}. Define los endpoints con sus métodos HTTP, rutas, parámetros, body de request y response de éxito y error. Incluye decisiones de diseño justificadas sobre versionado, autenticación, paginación y manejo de errores. Sigue las convenciones REST estándar.",
+      "content_en": "Design a RESTful API to manage {{resource_name}}. Required operations: {{required_operations}}. Clients that will consume the API: {{client_types}}. Define the endpoints with their HTTP methods, routes, parameters, request body, and success and error responses. Include justified design decisions about versioning, authentication, pagination, and error handling. Follow standard REST conventions.",
+      "variables_es": [
+        "nombre_del_recurso",
+        "operaciones_necesarias",
+        "tipo_de_clientes"
+      ],
+      "variables_en": [
+        "resource_name",
+        "required_operations",
+        "client_types"
+      ]
+    },
+    {
       "id": "tpl-code-review",
       "title_es": "Revisión de código",
       "title_en": "Code review",
@@ -153,6 +760,177 @@
       "variables_en": [
         "language",
         "code"
+      ]
+    },
+    {
+      "id": "tpl-database-schema",
+      "title_es": "Diseñar esquema de base de datos",
+      "title_en": "Design a database schema",
+      "category": "development",
+      "tags": [],
+      "content_es": "Diseña el esquema de base de datos para {{nombre_del_sistema}} usando {{tipo_de_base_de_datos}}. Entidades principales: {{entidades_principales}}. Define las tablas o colecciones con sus campos, tipos de datos, claves primarias y foráneas, e índices recomendados. Explica las relaciones entre entidades y las decisiones de normalización tomadas. Incluye también consideraciones de rendimiento y escalabilidad para el esquema propuesto.",
+      "content_en": "Design the database schema for {{system_name}} using {{database_type}}. Main entities: {{main_entities}}. Define the tables or collections with their fields, data types, primary and foreign keys, and recommended indexes. Explain the relationships between entities and the normalization decisions made. Also include performance and scalability considerations for the proposed schema.",
+      "variables_es": [
+        "nombre_del_sistema",
+        "entidades_principales",
+        "tipo_de_base_de_datos"
+      ],
+      "variables_en": [
+        "system_name",
+        "main_entities",
+        "database_type"
+      ]
+    },
+    {
+      "id": "tpl-debug-error",
+      "title_es": "Depurar un error",
+      "title_en": "Debug an error",
+      "category": "development",
+      "tags": [],
+      "content_es": "Ayúdame a depurar el siguiente error que ocurre en {{entorno}}. Mensaje de error: {{mensaje_de_error}}. Código relevante: {{codigo_relevante}}. Analiza las posibles causas del error, explica por qué ocurre cada una, e indica cómo confirmar cuál es la causa raíz. Propón la solución más probable con el código corregido y menciona cómo prevenir este tipo de error en el futuro.",
+      "content_en": "Help me debug the following error occurring in {{environment}}. Error message: {{error_message}}. Relevant code: {{relevant_code}}. Analyze the possible causes of the error, explain why each could occur, and indicate how to confirm the root cause. Propose the most likely solution with corrected code and mention how to prevent this type of error in the future.",
+      "variables_es": [
+        "mensaje_de_error",
+        "codigo_relevante",
+        "entorno"
+      ],
+      "variables_en": [
+        "error_message",
+        "relevant_code",
+        "environment"
+      ]
+    },
+    {
+      "id": "tpl-explain-code",
+      "title_es": "Explicar código",
+      "title_en": "Explain code",
+      "category": "development",
+      "tags": [],
+      "content_es": "Explica el siguiente código para alguien con nivel de experiencia {{nivel_de_experiencia}} trabajando en {{contexto_del_proyecto}}. Código: {{codigo}}. La explicación debe cubrir: qué hace el código a alto nivel, cómo funciona paso a paso, las decisiones de diseño importantes, y posibles casos límite o problemas que podría tener. Usa analogías si ayudan a la comprensión.",
+      "content_en": "Explain the following code for someone with {{experience_level}} experience working in {{project_context}}. Code: {{code}}. The explanation should cover: what the code does at a high level, how it works step by step, important design decisions, and potential edge cases or problems it might have. Use analogies if they help understanding.",
+      "variables_es": [
+        "codigo",
+        "nivel_de_experiencia",
+        "contexto_del_proyecto"
+      ],
+      "variables_en": [
+        "code",
+        "experience_level",
+        "project_context"
+      ]
+    },
+    {
+      "id": "tpl-git-commit-message",
+      "title_es": "Mensaje de commit de Git",
+      "title_en": "Git commit message",
+      "category": "development",
+      "tags": [],
+      "content_es": "Escribe un mensaje de commit de Git para los siguientes cambios en {{contexto_del_proyecto}}. Tipo de cambio: {{tipo_de_cambio}}. Cambios realizados: {{cambios_realizados}}. Sigue el formato Conventional Commits: tipo(scope): descripción breve en la primera línea (máximo 72 caracteres), línea en blanco, y cuerpo opcional explicando el \"por qué\" del cambio, no el \"qué\". Propón 3 variantes del mensaje de diferente longitud y detalle.",
+      "content_en": "Write a Git commit message for the following changes in {{project_context}}. Change type: {{change_type}}. Changes made: {{changes_made}}. Follow the Conventional Commits format: type(scope): brief description on the first line (maximum 72 characters), blank line, and optional body explaining the \"why\" of the change, not the \"what\". Propose 3 message variants of different length and detail.",
+      "variables_es": [
+        "cambios_realizados",
+        "tipo_de_cambio",
+        "contexto_del_proyecto"
+      ],
+      "variables_en": [
+        "changes_made",
+        "change_type",
+        "project_context"
+      ]
+    },
+    {
+      "id": "tpl-performance-optimization",
+      "title_es": "Optimizar rendimiento",
+      "title_en": "Performance optimization",
+      "category": "development",
+      "tags": [],
+      "content_es": "Analiza y optimiza el rendimiento de {{codigo_o_sistema}} con el objetivo de mejorar {{metrica_a_mejorar}}. Contexto técnico: {{contexto_tecnico}}. Identifica los cuellos de botella más importantes, explica por qué impactan en el rendimiento y propón soluciones ordenadas por impacto y coste de implementación. Incluye cómo medir la mejora antes y después de cada optimización.",
+      "content_en": "Analyze and optimize the performance of {{code_or_system}} with the goal of improving {{metric_to_improve}}. Technical context: {{technical_context}}. Identify the most significant bottlenecks, explain why they impact performance, and propose solutions ordered by impact and implementation cost. Include how to measure the improvement before and after each optimization.",
+      "variables_es": [
+        "codigo_o_sistema",
+        "metrica_a_mejorar",
+        "contexto_tecnico"
+      ],
+      "variables_en": [
+        "code_or_system",
+        "metric_to_improve",
+        "technical_context"
+      ]
+    },
+    {
+      "id": "tpl-refactor-code",
+      "title_es": "Refactorizar código",
+      "title_en": "Refactor code",
+      "category": "development",
+      "tags": [],
+      "content_es": "Refactoriza el siguiente código en {{lenguaje}} con el objetivo de {{objetivo_del_refactor}}. Código original: {{codigo_a_refactorizar}}. Mantén el comportamiento externo idéntico. Explica cada cambio que hagas y el razonamiento detrás de él. Identifica también cualquier code smell o problema adicional que detectes aunque no esté en el objetivo principal del refactor.",
+      "content_en": "Refactor the following {{language}} code with the goal of {{refactor_goal}}. Original code: {{code_to_refactor}}. Keep the external behavior identical. Explain each change you make and the reasoning behind it. Also identify any code smells or additional issues you detect even if they are not part of the main refactor goal.",
+      "variables_es": [
+        "codigo_a_refactorizar",
+        "lenguaje",
+        "objetivo_del_refactor"
+      ],
+      "variables_en": [
+        "code_to_refactor",
+        "language",
+        "refactor_goal"
+      ]
+    },
+    {
+      "id": "tpl-security-review",
+      "title_es": "Revisión de seguridad de código",
+      "title_en": "Code security review",
+      "category": "development",
+      "tags": [],
+      "content_es": "Realiza una revisión de seguridad del siguiente código {{lenguaje}} de una aplicación de tipo {{tipo_de_aplicacion}}. Código: {{codigo_a_revisar}}. Identifica vulnerabilidades potenciales clasificándolas por severidad (crítica, alta, media, baja). Para cada vulnerabilidad explica: qué es, cómo podría ser explotada, y cómo corregirla con código de ejemplo. Basate en el OWASP Top 10 cuando sea aplicable.",
+      "content_en": "Conduct a security review of the following {{language}} code from a {{application_type}} application. Code: {{code_to_review}}. Identify potential vulnerabilities classifying them by severity (critical, high, medium, low). For each vulnerability explain: what it is, how it could be exploited, and how to fix it with example code. Reference the OWASP Top 10 when applicable.",
+      "variables_es": [
+        "codigo_a_revisar",
+        "lenguaje",
+        "tipo_de_aplicacion"
+      ],
+      "variables_en": [
+        "code_to_review",
+        "language",
+        "application_type"
+      ]
+    },
+    {
+      "id": "tpl-technical-rfc",
+      "title_es": "Documento RFC técnico",
+      "title_en": "Technical RFC document",
+      "category": "development",
+      "tags": [],
+      "content_es": "Redacta un documento RFC (Request for Comments) técnico titulado \"{{titulo_propuesta}}\", escrito por {{autor}}. El problema a resolver es: {{problema_a_resolver}}. El documento debe seguir la estructura estándar de RFC: resumen ejecutivo, motivación y problema, propuesta detallada de solución, alternativas consideradas y por qué se descartan, impacto en sistemas existentes, plan de implementación, y preguntas abiertas. Tono técnico y preciso.",
+      "content_en": "Write a technical RFC (Request for Comments) document titled \"{{proposal_title}}\", written by {{author}}. The problem to solve is: {{problem_to_solve}}. The document should follow the standard RFC structure: executive summary, motivation and problem, detailed solution proposal, alternatives considered and why they were discarded, impact on existing systems, implementation plan, and open questions. Technical and precise tone.",
+      "variables_es": [
+        "titulo_propuesta",
+        "problema_a_resolver",
+        "autor"
+      ],
+      "variables_en": [
+        "proposal_title",
+        "problem_to_solve",
+        "author"
+      ]
+    },
+    {
+      "id": "tpl-write-documentation",
+      "title_es": "Escribir documentación técnica",
+      "title_en": "Write technical documentation",
+      "category": "development",
+      "tags": [],
+      "content_es": "Escribe la documentación de tipo {{tipo_de_documentacion}} para {{nombre_del_componente}}, dirigida a {{audiencia}}. La documentación debe incluir: descripción general y propósito, requisitos previos, instrucciones de uso paso a paso con ejemplos de código, parámetros o props con sus tipos y valores por defecto, casos de uso comunes, y errores frecuentes con sus soluciones. Usa un lenguaje claro y ejemplos reales.",
+      "content_en": "Write {{documentation_type}} documentation for {{component_name}}, aimed at {{audience}}. The documentation should include: general description and purpose, prerequisites, step-by-step usage instructions with code examples, parameters or props with their types and default values, common use cases, and frequent errors with their solutions. Use clear language and real examples.",
+      "variables_es": [
+        "nombre_del_componente",
+        "audiencia",
+        "tipo_de_documentacion"
+      ],
+      "variables_en": [
+        "component_name",
+        "audience",
+        "documentation_type"
       ]
     },
     {
@@ -192,6 +970,25 @@
       ]
     },
     {
+      "id": "tpl-business-case",
+      "title_es": "Caso de negocio",
+      "title_en": "Business case",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Redacta un caso de negocio para {{nombre_iniciativa}}. Inversión requerida: {{inversion_requerida}}. Beneficios esperados: {{beneficios_esperados}}. El documento debe incluir: resumen ejecutivo, descripción del problema u oportunidad, solución propuesta, análisis de costes y beneficios con ROI estimado, riesgos principales con mitigaciones, alternativas consideradas, y recomendación final con justificación. Usa datos cuantitativos cuando sea posible.",
+      "content_en": "Write a business case for {{initiative_name}}. Required investment: {{required_investment}}. Expected benefits: {{expected_benefits}}. The document should include: executive summary, problem or opportunity description, proposed solution, cost-benefit analysis with estimated ROI, main risks with mitigations, alternatives considered, and final recommendation with justification. Use quantitative data where possible.",
+      "variables_es": [
+        "nombre_iniciativa",
+        "inversion_requerida",
+        "beneficios_esperados"
+      ],
+      "variables_en": [
+        "initiative_name",
+        "required_investment",
+        "expected_benefits"
+      ]
+    },
+    {
       "id": "tpl-compare-options",
       "title_es": "Comparar opciones y recomendar",
       "title_en": "Compare options and recommend",
@@ -206,6 +1003,253 @@
       "variables_en": [
         "options",
         "decision_criteria"
+      ]
+    },
+    {
+      "id": "tpl-competitor-analysis",
+      "title_es": "Análisis de competidores",
+      "title_en": "Competitor analysis",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Realiza un análisis competitivo de {{producto_propio}} frente a {{competidores_a_analizar}}, centrado en la dimensión de {{dimension_de_analisis}}. Para cada competidor analiza: propuesta de valor principal, puntos fuertes y débiles, segmento de mercado objetivo, estrategia de precios, y diferenciadores clave. Presenta los hallazgos en una tabla comparativa. Termina con las 3 oportunidades más claras de diferenciación para {{producto_propio}}.",
+      "content_en": "Conduct a competitive analysis of {{own_product}} against {{competitors_to_analyze}}, focused on the dimension of {{analysis_dimension}}. For each competitor analyze: main value proposition, strengths and weaknesses, target market segment, pricing strategy, and key differentiators. Present findings in a comparison table. End with the 3 clearest differentiation opportunities for {{own_product}}.",
+      "variables_es": [
+        "producto_propio",
+        "competidores_a_analizar",
+        "dimension_de_analisis"
+      ],
+      "variables_en": [
+        "own_product",
+        "competitors_to_analyze",
+        "analysis_dimension"
+      ]
+    },
+    {
+      "id": "tpl-forecast-analysis",
+      "title_es": "Análisis de previsión",
+      "title_en": "Forecast analysis",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Realiza un análisis de previsión para {{metrica_a_proyectar}} con un horizonte de {{horizonte_de_proyeccion}}. Datos históricos disponibles: {{datos_historicos}}. Analiza las tendencias y estacionalidades presentes en los datos, selecciona el método de proyección más adecuado para el contexto y justifícalo, presenta las proyecciones con rangos de confianza (optimista, base y pesimista), e identifica los principales supuestos y factores que podrían invalidar la proyección.",
+      "content_en": "Conduct a forecast analysis for {{metric_to_project}} with a {{projection_horizon}} horizon. Available historical data: {{historical_data}}. Analyze trends and seasonality in the data, select the most appropriate projection method for the context and justify it, present projections with confidence ranges (optimistic, base, and pessimistic), and identify the main assumptions and factors that could invalidate the projection.",
+      "variables_es": [
+        "metrica_a_proyectar",
+        "datos_historicos",
+        "horizonte_de_proyeccion"
+      ],
+      "variables_en": [
+        "metric_to_project",
+        "historical_data",
+        "projection_horizon"
+      ]
+    },
+    {
+      "id": "tpl-kpi-definition",
+      "title_es": "Definir KPIs",
+      "title_en": "Define KPIs",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Define los KPIs más relevantes para medir el progreso hacia {{objetivo_de_negocio}} en el equipo o área de {{equipo_o_area}}, con un periodo de medición de {{periodo_de_medicion}}. Para cada KPI propuesto incluye: nombre del KPI, definición precisa de cómo se calcula, frecuencia de medición, objetivo numérico con su justificación, fuente de datos, y responsable de seguimiento. Distingue entre leading indicators (predicen el resultado) y lagging indicators (miden el resultado).",
+      "content_en": "Define the most relevant KPIs to measure progress toward {{business_objective}} for the {{team_or_area}} team or area, with a measurement period of {{measurement_period}}. For each proposed KPI include: KPI name, precise definition of how it is calculated, measurement frequency, numerical target with justification, data source, and tracking owner. Distinguish between leading indicators (predict the outcome) and lagging indicators (measure the outcome).",
+      "variables_es": [
+        "objetivo_de_negocio",
+        "equipo_o_area",
+        "periodo_de_medicion"
+      ],
+      "variables_en": [
+        "business_objective",
+        "team_or_area",
+        "measurement_period"
+      ]
+    },
+    {
+      "id": "tpl-prioritization-framework",
+      "title_es": "Framework de priorización",
+      "title_en": "Prioritization framework",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Ayúdame a priorizar las siguientes iniciativas: {{lista_de_iniciativas}}. El objetivo estratégico principal es: {{objetivo_estrategico}}. Criterios de decisión a usar: {{criterios_de_decision}}. Aplica el framework más adecuado (RICE, ICE, MoSCoW, o el que mejor se ajuste al contexto), puntúa cada iniciativa en cada criterio, calcula la puntuación final y presenta el ranking resultante con una justificación breve para las 3 primeras posiciones.",
+      "content_en": "Help me prioritize the following initiatives: {{list_of_initiatives}}. The main strategic goal is: {{strategic_goal}}. Decision criteria to use: {{decision_criteria}}. Apply the most suitable framework (RICE, ICE, MoSCoW, or whichever best fits the context), score each initiative on each criterion, calculate the final score, and present the resulting ranking with a brief justification for the top 3 positions.",
+      "variables_es": [
+        "lista_de_iniciativas",
+        "criterios_de_decision",
+        "objetivo_estrategico"
+      ],
+      "variables_en": [
+        "list_of_initiatives",
+        "decision_criteria",
+        "strategic_goal"
+      ]
+    },
+    {
+      "id": "tpl-risk-assessment",
+      "title_es": "Evaluación de riesgos",
+      "title_en": "Risk assessment",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Realiza una evaluación de riesgos para {{proyecto_o_decision}} en un horizonte temporal de {{horizonte_temporal}}, gestionado por {{equipo_responsable}}. Para cada riesgo identificado incluye: descripción del riesgo, categoría (técnico, operacional, financiero, estratégico, etc.), probabilidad (alta/media/baja), impacto (alto/medio/bajo), estrategia de mitigación, y responsable de la mitigación. Ordena los riesgos por nivel de exposición (probabilidad x impacto).",
+      "content_en": "Conduct a risk assessment for {{project_or_decision}} over a {{time_horizon}} time horizon, managed by {{responsible_team}}. For each identified risk include: risk description, category (technical, operational, financial, strategic, etc.), probability (high/medium/low), impact (high/medium/low), mitigation strategy, and mitigation owner. Order risks by exposure level (probability x impact).",
+      "variables_es": [
+        "proyecto_o_decision",
+        "horizonte_temporal",
+        "equipo_responsable"
+      ],
+      "variables_en": [
+        "project_or_decision",
+        "time_horizon",
+        "responsible_team"
+      ]
+    },
+    {
+      "id": "tpl-root-cause-analysis",
+      "title_es": "Análisis de causa raíz",
+      "title_en": "Root cause analysis",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Realiza un análisis de causa raíz del problema: {{problema_detectado}}, que afecta a {{area_afectada}}. Datos disponibles: {{datos_disponibles}}. Aplica la técnica de los 5 Porqués para llegar a la causa raíz, complementada con un análisis de las causas contribuyentes. Distingue entre causas inmediatas, causas subyacentes y causa raíz. Termina con recomendaciones de acciones correctivas y preventivas específicas.",
+      "content_en": "Conduct a root cause analysis of the problem: {{detected_problem}}, affecting {{affected_area}}. Available data: {{available_data}}. Apply the 5 Whys technique to reach the root cause, complemented by an analysis of contributing causes. Distinguish between immediate causes, underlying causes, and the root cause. End with specific corrective and preventive action recommendations.",
+      "variables_es": [
+        "problema_detectado",
+        "area_afectada",
+        "datos_disponibles"
+      ],
+      "variables_en": [
+        "detected_problem",
+        "affected_area",
+        "available_data"
+      ]
+    },
+    {
+      "id": "tpl-survey-design",
+      "title_es": "Diseñar una encuesta",
+      "title_en": "Design a survey",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Diseña una encuesta para {{objetivo_de_la_encuesta}}, dirigida a {{audiencia_objetivo}}, con un máximo de {{numero_maximo_de_preguntas}} preguntas. Para cada pregunta indica: el texto exacto de la pregunta, el tipo de respuesta (escala Likert, opción múltiple, abierta, etc.), y por qué esa pregunta es necesaria para el objetivo. Incluye una pregunta de control para detectar respuestas no reflexivas y ordena las preguntas de lo general a lo específico.",
+      "content_en": "Design a survey for {{survey_objective}}, aimed at {{target_audience}}, with a maximum of {{maximum_number_of_questions}} questions. For each question indicate: the exact question text, the response type (Likert scale, multiple choice, open-ended, etc.), and why that question is necessary for the objective. Include a control question to detect unreflective responses and order questions from general to specific.",
+      "variables_es": [
+        "objetivo_de_la_encuesta",
+        "audiencia_objetivo",
+        "numero_maximo_de_preguntas"
+      ],
+      "variables_en": [
+        "survey_objective",
+        "target_audience",
+        "maximum_number_of_questions"
+      ]
+    },
+    {
+      "id": "tpl-swot-analysis",
+      "title_es": "Análisis DAFO",
+      "title_en": "SWOT analysis",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Realiza un análisis DAFO completo para {{nombre_empresa_o_proyecto}} en el contexto de {{contexto}}, orientado a informar la decisión de {{decision_o_objetivo}}. Para cada cuadrante (Debilidades, Amenazas, Fortalezas, Oportunidades) identifica los 4-5 factores más relevantes y ordénalos por impacto. Termina con 3 estrategias FO (usar fortalezas para aprovechar oportunidades) y 2 estrategias DA (minimizar debilidades y amenazas).",
+      "content_en": "Conduct a complete SWOT analysis for {{company_or_project_name}} in the context of {{context}}, aimed at informing the decision of {{decision_or_goal}}. For each quadrant (Weaknesses, Threats, Strengths, Opportunities) identify the 4-5 most relevant factors and rank them by impact. End with 3 SO strategies (use strengths to seize opportunities) and 2 WT strategies (minimize weaknesses and threats).",
+      "variables_es": [
+        "nombre_empresa_o_proyecto",
+        "contexto",
+        "decision_o_objetivo"
+      ],
+      "variables_en": [
+        "company_or_project_name",
+        "context",
+        "decision_or_goal"
+      ]
+    },
+    {
+      "id": "tpl-user-research-synthesis",
+      "title_es": "Síntesis de investigación de usuarios",
+      "title_en": "User research synthesis",
+      "category": "analysis",
+      "tags": [],
+      "content_es": "Sintetiza los hallazgos de una investigación de tipo {{tipo_de_investigacion}} realizada con {{numero_de_participantes}} participantes sobre {{tema_investigado}}. Organiza los hallazgos en: patrones de comportamiento principales, necesidades y motivaciones identificadas, pain points y frustraciones, y oportunidades de diseño detectadas. Para cada hallazgo indica la evidencia que lo soporta y su nivel de confianza. Termina con las 3 implicaciones más importantes para el diseño o producto.",
+      "content_en": "Synthesize the findings from a {{research_type}} study conducted with {{number_of_participants}} participants about {{research_topic}}. Organize findings into: main behavior patterns, identified needs and motivations, pain points and frustrations, and detected design opportunities. For each finding indicate the supporting evidence and confidence level. End with the 3 most important implications for design or product.",
+      "variables_es": [
+        "tipo_de_investigacion",
+        "numero_de_participantes",
+        "tema_investigado"
+      ],
+      "variables_en": [
+        "research_type",
+        "number_of_participants",
+        "research_topic"
+      ]
+    },
+    {
+      "id": "tpl-brainstorming-session",
+      "title_es": "Facilitar sesión de brainstorming",
+      "title_en": "Facilitate a brainstorming session",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Diseña una sesión de brainstorming de {{duracion}} sobre {{tema_de_la_sesion}} para {{participantes}}. Incluye: objetivos claros de la sesión, reglas de la sesión para crear un ambiente seguro, actividad de calentamiento de 5 minutos, técnica principal de generación de ideas con instrucciones paso a paso, método de agrupación y votación de ideas, y cómo terminar con compromisos concretos. Adapta el nivel de estructura al tamaño y perfil del grupo.",
+      "content_en": "Design a {{duration}} brainstorming session about {{session_topic}} for {{participants}}. Include: clear session objectives, session rules to create a safe environment, 5-minute warm-up activity, main idea-generation technique with step-by-step instructions, idea grouping and voting method, and how to end with concrete commitments. Adapt the level of structure to the group size and profile.",
+      "variables_es": [
+        "tema_de_la_sesion",
+        "participantes",
+        "duracion"
+      ],
+      "variables_en": [
+        "session_topic",
+        "participants",
+        "duration"
+      ]
+    },
+    {
+      "id": "tpl-decision-log",
+      "title_es": "Registro de decisiones del proyecto",
+      "title_en": "Project decision log",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Documenta la siguiente decisión del proyecto {{nombre_proyecto}} en el registro de decisiones. Decisión tomada: {{decision_tomada}}. Participantes en la decisión: {{participantes}}. El registro debe incluir: título de la decisión, fecha, contexto y problema que motivó la decisión, opciones consideradas con sus pros y contras, decisión final con justificación, implicaciones y próximos pasos derivados, y responsable de la implementación.",
+      "content_en": "Document the following decision from project {{project_name}} in the decision log. Decision made: {{decision_made}}. Participants in the decision: {{participants}}. The log should include: decision title, date, context and problem that prompted the decision, options considered with their pros and cons, final decision with justification, implications and next steps derived, and implementation owner.",
+      "variables_es": [
+        "nombre_proyecto",
+        "decision_tomada",
+        "participantes"
+      ],
+      "variables_en": [
+        "project_name",
+        "decision_made",
+        "participants"
+      ]
+    },
+    {
+      "id": "tpl-feedback-session",
+      "title_es": "Sesión de feedback entre personas",
+      "title_en": "Peer feedback session",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Prepara una sesión de feedback de {{nombre_emisor}} para {{nombre_receptor}} en el contexto de {{contexto_de_trabajo}}. Estructura la sesión en: preparación previa (qué observar y cómo), apertura que establezca un ambiente de confianza, entrega del feedback usando el modelo SBI (Situación, Comportamiento, Impacto), espacio para la respuesta y el diálogo, y cierre con compromisos mutuos. El feedback debe ser específico, basado en comportamientos observables y orientado al desarrollo.",
+      "content_en": "Prepare a feedback session from {{giver_name}} to {{recipient_name}} in the context of {{work_context}}. Structure the session into: preparation beforehand (what to observe and how), opening that establishes a trust environment, feedback delivery using the SBI model (Situation, Behavior, Impact), space for response and dialogue, and closing with mutual commitments. Feedback should be specific, based on observable behaviors, and development-oriented.",
+      "variables_es": [
+        "nombre_receptor",
+        "nombre_emisor",
+        "contexto_de_trabajo"
+      ],
+      "variables_en": [
+        "recipient_name",
+        "giver_name",
+        "work_context"
+      ]
+    },
+    {
+      "id": "tpl-kickoff-meeting",
+      "title_es": "Reunión de inicio de proyecto",
+      "title_en": "Project kickoff meeting",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Prepara la agenda y los materiales para la reunión de kickoff de {{nombre_proyecto}}, con el equipo de {{equipo_involucrado}}, con fecha de entrega {{fecha_de_entrega}}. La reunión debe cubrir: contexto y por qué importa este proyecto, objetivos claros y criterios de éxito, alcance y lo que queda fuera del alcance, roles y responsabilidades del equipo, hitos clave y timeline, riesgos iniciales identificados, y forma de trabajo y canales de comunicación. Incluye preguntas para abrir el debate en cada sección.",
+      "content_en": "Prepare the agenda and materials for the kickoff meeting of {{project_name}}, with the {{involved_team}} team, with a delivery date of {{delivery_date}}. The meeting should cover: context and why this project matters, clear objectives and success criteria, scope and what is out of scope, team roles and responsibilities, key milestones and timeline, identified initial risks, and ways of working and communication channels. Include questions to open discussion in each section.",
+      "variables_es": [
+        "nombre_proyecto",
+        "equipo_involucrado",
+        "fecha_de_entrega"
+      ],
+      "variables_en": [
+        "project_name",
+        "involved_team",
+        "delivery_date"
       ]
     },
     {
@@ -226,6 +1270,44 @@
       ]
     },
     {
+      "id": "tpl-one-on-one",
+      "title_es": "Guión para reunión 1:1",
+      "title_en": "One-on-one meeting guide",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Prepara la estructura para una reunión 1:1 con {{nombre_colaborador}}, con frecuencia {{frecuencia_de_reunion}}. Temas pendientes o a revisar: {{temas_pendientes}}. Genera una agenda que incluya: check-in personal breve, revisión de prioridades y bloqueos actuales, seguimiento de compromisos anteriores, espacio para los temas del colaborador, y definición de próximos pasos. La reunión debe priorizar la escucha y el desarrollo del colaborador, no solo el seguimiento de tareas.",
+      "content_en": "Prepare the structure for a one-on-one meeting with {{collaborator_name}}, with {{meeting_frequency}} frequency. Pending topics or items to review: {{pending_topics}}. Generate an agenda that includes: brief personal check-in, review of current priorities and blockers, follow-up on previous commitments, space for the collaborator's topics, and definition of next steps. The meeting should prioritize listening and the collaborator's development, not just task tracking.",
+      "variables_es": [
+        "nombre_colaborador",
+        "frecuencia_de_reunion",
+        "temas_pendientes"
+      ],
+      "variables_en": [
+        "collaborator_name",
+        "meeting_frequency",
+        "pending_topics"
+      ]
+    },
+    {
+      "id": "tpl-post-mortem",
+      "title_es": "Post-mortem de proyecto o incidente",
+      "title_en": "Project or incident post-mortem",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Facilita el post-mortem de {{nombre_evento}}, gestionado por {{equipo_responsable}}, con el siguiente impacto: {{impacto_generado}}. El documento debe cubrir: resumen ejecutivo del evento, cronología de lo ocurrido, análisis de causas raíz (no buscar culpables), qué funcionó bien durante la respuesta, lecciones aprendidas, y plan de acción con responsables y fechas. El tono debe ser constructivo y centrado en la mejora del sistema, no en las personas.",
+      "content_en": "Facilitate the post-mortem of {{event_name}}, managed by {{responsible_team}}, with the following impact: {{generated_impact}}. The document should cover: executive summary of the event, timeline of what happened, root cause analysis (not blame-finding), what worked well during the response, lessons learned, and action plan with owners and dates. The tone should be constructive and focused on system improvement, not on individuals.",
+      "variables_es": [
+        "nombre_evento",
+        "equipo_responsable",
+        "impacto_generado"
+      ],
+      "variables_en": [
+        "event_name",
+        "responsible_team",
+        "generated_impact"
+      ]
+    },
+    {
       "id": "tpl-prepare-agenda",
       "title_es": "Preparar agenda de reunión",
       "title_en": "Prepare a meeting agenda",
@@ -242,6 +1324,82 @@
         "meeting_goal",
         "attendees",
         "available_time"
+      ]
+    },
+    {
+      "id": "tpl-retrospective",
+      "title_es": "Retrospectiva de equipo",
+      "title_en": "Team retrospective",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Facilita una retrospectiva para {{nombre_equipo}} sobre el periodo de {{periodo_revisado}} usando el formato {{formato_preferido}}. Genera las preguntas o actividades para cada fase: qué fue bien, qué no funcionó, qué podemos mejorar y compromisos de acción. Para cada área de mejora identificada, ayuda a formular un action item concreto con responsable y fecha. El objetivo es que el equipo salga con 2-3 compromisos accionables y alcanzables.",
+      "content_en": "Facilitate a retrospective for {{team_name}} covering the {{period_reviewed}} period using the {{preferred_format}} format. Generate the questions or activities for each phase: what went well, what did not work, what we can improve, and action commitments. For each identified improvement area, help formulate a concrete action item with an owner and date. The goal is for the team to leave with 2-3 actionable and achievable commitments.",
+      "variables_es": [
+        "nombre_equipo",
+        "periodo_revisado",
+        "formato_preferido"
+      ],
+      "variables_en": [
+        "team_name",
+        "period_reviewed",
+        "preferred_format"
+      ]
+    },
+    {
+      "id": "tpl-stakeholder-update",
+      "title_es": "Actualización a stakeholders",
+      "title_en": "Stakeholder update",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Redacta una actualización {{frecuencia}} sobre {{nombre_iniciativa}} para {{audiencia_stakeholders}}. El mensaje debe ser ejecutivo y orientado al impacto de negocio, no a los detalles técnicos. Estructura: situación actual en 2-3 frases, logros del periodo con métricas cuando sea posible, riesgos relevantes para la audiencia, lo que viene a continuación, y lo que necesitas de ellos (si aplica). Adapta el nivel de detalle y el lenguaje al perfil de la audiencia.",
+      "content_en": "Write a {{frequency}} update about {{initiative_name}} for {{stakeholder_audience}}. The message should be executive and business-impact focused, not technical detail focused. Structure: current situation in 2-3 sentences, period achievements with metrics when possible, risks relevant to the audience, what comes next, and what you need from them (if applicable). Adapt the level of detail and language to the audience profile.",
+      "variables_es": [
+        "nombre_iniciativa",
+        "audiencia_stakeholders",
+        "frecuencia"
+      ],
+      "variables_en": [
+        "initiative_name",
+        "stakeholder_audience",
+        "frequency"
+      ]
+    },
+    {
+      "id": "tpl-status-update",
+      "title_es": "Actualización de estado del proyecto",
+      "title_en": "Project status update",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Redacta una actualización de estado para {{nombre_proyecto}} correspondiente al periodo de {{periodo_cubierto}}, dirigida a {{audiencia}}. El update debe incluir: semáforo de estado general (verde/amarillo/rojo) con justificación breve, progreso respecto a los hitos del periodo, logros destacados, problemas o riesgos activos con el plan de mitigación, próximos hitos y fechas, y decisiones que se necesitan de la audiencia. Sé directo y evita el lenguaje que oculta problemas.",
+      "content_en": "Write a status update for {{project_name}} covering the {{period_covered}} period, aimed at {{audience}}. The update should include: overall status indicator (green/yellow/red) with brief justification, progress against milestones for the period, notable achievements, active issues or risks with mitigation plan, upcoming milestones and dates, and decisions needed from the audience. Be direct and avoid language that obscures problems.",
+      "variables_es": [
+        "nombre_proyecto",
+        "periodo_cubierto",
+        "audiencia"
+      ],
+      "variables_en": [
+        "project_name",
+        "period_covered",
+        "audience"
+      ]
+    },
+    {
+      "id": "tpl-team-norms",
+      "title_es": "Normas de trabajo en equipo",
+      "title_en": "Team working norms",
+      "category": "meetings",
+      "tags": [],
+      "content_es": "Ayuda al equipo {{nombre_equipo}}, que trabaja en {{tipo_de_trabajo}}, a definir sus normas de trabajo. Retos actuales del equipo: {{retos_actuales}}. Genera una propuesta de normas organizadas en categorías: comunicación y canales, reuniones y disponibilidad, toma de decisiones, revisión y feedback, y gestión de conflictos. Para cada norma incluye el \"por qué\" que la justifica. El documento final debe ser debatido y acordado por el equipo, no impuesto.",
+      "content_en": "Help the {{team_name}} team, working on {{work_type}}, define their working norms. Current team challenges: {{current_challenges}}. Generate a proposed set of norms organized in categories: communication and channels, meetings and availability, decision-making, review and feedback, and conflict resolution. For each norm include the \"why\" that justifies it. The final document should be debated and agreed by the team, not imposed.",
+      "variables_es": [
+        "nombre_equipo",
+        "tipo_de_trabajo",
+        "retos_actuales"
+      ],
+      "variables_en": [
+        "team_name",
+        "work_type",
+        "current_challenges"
       ]
     }
   ]
